@@ -5,9 +5,12 @@ App works with MongoDb hosted on mLab so you need to create a database there and
 How to start:
 
 1. Install nodemon globally
-npm install nodemon -g
+
+`npm install nodemon -g`
 
 2. Start server
-nodemon app
+
+`nodemon app`
+
 
 Happy coding :) 
