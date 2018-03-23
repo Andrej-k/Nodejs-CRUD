@@ -1,6 +1,6 @@
 # Nodejs-CRUD
 
-App works with MongoDb hosted on mLab so you need to create a database there and change config.js file with your credentials.
+App works with MongoDb hosted on mLab so you need to create a database there and change config.js file with your connection string.
 
 How to start:
 
