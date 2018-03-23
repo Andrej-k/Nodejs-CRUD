@@ -4,16 +4,19 @@ App works with MongoDb hosted on mLab so you need to create a database there and
 
 How to start:
 
-1. Install nodemon globally
+1. `npm install`
+
+
+2. Install nodemon globally
 
 `npm install nodemon -g`
 
 
-2. Start server
+3. Start server
 
 `nodemon app`
 
-3. Open [http://localhost:3050](http://localhost:3050)
+4. Open [http://localhost:3050](http://localhost:3050)
 
 
 
