@@ -1,0 +1,27 @@
+<% include shared/head.ejs %>
+<% include shared/header.ejs %>
+
+<div class="container">
+  <div class="row" style="margin-top: 50px;">
+    <% for(var i = 0; i < people.length; i++) { %>
+      <div class="col-md-4" style="margin-bottom: 50px;">
+        <div class="card" style="width: 18rem;">
+          <% if(people[i].gender == 'muško') { %>
+          <img class="card-img-top" src="../assets/img/male.jpeg" alt="Card image cap">
+          <% } else { %>
+          <img class="card-img-top" src="../assets/img/Placeholder_face_01.jpg" alt="Card image cap">
+          <% } %>
+          <div class="card-body">
+            <h5 class="card-title"><%= people[i].firstName %> <%= people[i].lastName %></h5>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Spol: <%= people[i].gender %></li>
+            <li class="list-group-item">Datum rođenja: <%= people[i].day %>.<%= people[i].month %>.<%= people[i].year %></li>
+          </ul>
+        </div>
+      </div>
+      <% } %>
+    </div>
+  </div>
+
+  <% include shared/footer.ejs %>

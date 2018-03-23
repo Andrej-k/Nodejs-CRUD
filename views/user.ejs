@@ -1,0 +1,41 @@
+<% include shared/head.ejs %>
+<% include shared/header.ejs %>
+
+<div class="container">
+<form action="/confirm" method="POST">
+  <div class="form-group">
+    <label for="exampleInputName">Ime</label>
+    <input type="text" name="firstName" class="form-control" id="exampleInputName" placeholder="Enter name" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputSurname">Prezime</label>
+    <input type="text" name="lastName" class="form-control" id="exampleInputSurname" placeholder="Enter surname" required>
+  </div>
+  <label>Spol: </label>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" name="gender" type="radio" required name="inlineRadioOptions" id="inlineRadio1" value="muško">
+    <label class="form-check-label" for="inlineRadio1">M</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" name="gender" type="radio" required name="inlineRadioOptions" id="inlineRadio2" value="žensko">
+    <label class="form-check-label" for="inlineRadio2">Z</label>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-4">
+      <label for="year">Godina</label>
+      <input type="number" name="year" required class="form-control" id="year" min="1900" max="2010">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="month">Mjesec</label>
+      <input type="number" name="month" required class="form-control" id="month" min="1" max="12">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="day">Dan</label>
+      <input type="number" name="day" required class="form-control" id="day" min="1" max="31">
+    </div>
+  </div>
+  <button type="submit" id="upload-button" class="btn btn-primary" style="margin-top: 20px;">Submit</button>
+</form>
+</div>
+
+<% include shared/footer.ejs %>

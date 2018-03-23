@@ -1,0 +1,19 @@
+<% include shared/head.ejs %>
+<% include shared/header.ejs %>
+
+<div class="container">
+<form action="/user" method="POST">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Code</label>
+    <input type="number" name="code" class="form-control" id="exampleInputCode" placeholder="Enter code">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<% if(typeof(error) !== 'undefined' ) { %>
+    <div class="alert alert-danger" role="alert">
+        Krivi kod!
+    </div>
+<% } %>
+</div>
+
+<% include shared/footer.ejs %>
