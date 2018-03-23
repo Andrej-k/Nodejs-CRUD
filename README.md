@@ -8,9 +8,13 @@ How to start:
 
 `npm install nodemon -g`
 
+
 2. Start server
 
 `nodemon app`
+
+3. Open [http://localhost:3050](http://localhost:3050)
+
 
 
 Happy coding :) 
